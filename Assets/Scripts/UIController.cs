@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {
-    public Text scoreText;
-    public Text ballText;
+    public TMP_Text scoreText;
+    public TMP_Text ballText;
 
     private int score;
 
