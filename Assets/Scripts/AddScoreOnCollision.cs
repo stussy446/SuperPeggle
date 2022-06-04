@@ -7,8 +7,20 @@ public class AddScoreOnCollision : MonoBehaviour
     public UIController uIController;
     public int scoreToAdd;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Start()
     {
-        uIController.AddScore(scoreToAdd);
+        uIController = FindObjectOfType<UIController>();
+
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("pickup"))
+        {
+            uIController.AddScore(scoreToAdd);
+            Destroy(collision.gameObject);
+
+        }
+    }
+
 }

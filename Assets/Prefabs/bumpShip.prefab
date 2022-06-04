@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7654796640425105709}
   - component: {fileID: 7654796640425105708}
   - component: {fileID: 5861849080046906496}
+  - component: {fileID: 1784203942736195502}
   - component: {fileID: 7341846146335055521}
   m_Layer: 0
   m_Name: bumpShip
@@ -126,6 +127,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 200
+--- !u!114 &1784203942736195502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7654796640425105714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630b4fe9b94964926bb8cb5875ebde2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &7341846146335055521
 AudioSource:
   m_ObjectHideFlags: 0
@@ -136,9 +149,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 05c3d884e8e904145b006055307669e6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cc403b68abf3549f39eb67ff18a56dc0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.406
   m_Pitch: 1
   Loop: 0
   Mute: 0
